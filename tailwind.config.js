@@ -20,6 +20,31 @@ export default {
         green: { "50": "#E6F9EB", "100": "#CEF3D6", "200": "#9CE7AE", "300": "#6BDC85", "400": "#39D05D", "500": "#28A745", "600": "#1F8437", "700": "#186329", "800": "#10421B", "900": "#08210E", "950": "#041007" },
         aqua: { "50": "#DBFFFB", "100": "#B8FFF8", "200": "#70FFF1", "300": "#29FFEA", "400": "#00E0CA", "500": "#009688", "600": "#007A6E", "700": "#005C53", "800": "#003D37", "900": "#001F1C", "950": "#000F0E" },
         blue: { "50": "#E0EFFF", "100": "#BDDDFF", "200": "#7ABAFF", "300": "#3898FF", "400": "#0076F5", "500": "#0056B3", "600": "#00458F", "700": "#00346B", "800": "#002347", "900": "#001124", "950": "#000A14" },
+        primary: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+        },
+        accent: {
+          50: '#fdf4ff',
+          100: '#fae8ff',
+          200: '#f5d0fe',
+          300: '#f0abfc',
+          400: '#e879f9',
+          500: '#d946ef',
+          600: '#c026d3',
+          700: '#a21caf',
+          800: '#86198f',
+          900: '#701a75',
+        },
+
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -30,10 +55,6 @@ export default {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
         },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
@@ -41,10 +62,6 @@ export default {
         muted: {
           DEFAULT: 'hsl(var(--muted))',
           foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -60,6 +77,11 @@ export default {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'hero-pattern': 'linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80")',
+        'hero-pattern-dark': 'linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80")',
       },
     },
   },
