@@ -12,8 +12,8 @@ const TagButton: React.FC<TagButtonProps> = ({ children, active, onClick }) => {
       onClick={onClick}
       className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center ${
         active
-          ? 'bg-blue-600 text-white shadow-md'
-          : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+          ? 'bg-blue-600 text-white-500 shadow-md'
+          : 'bg-white-500 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
       }`}
     >
       {active && <Tag size={14} className="mr-2" />}

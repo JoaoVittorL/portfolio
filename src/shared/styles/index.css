@@ -16,7 +16,7 @@ html {
 
 @layer base {
   body {
-    @apply text-gray-900 dark:text-white;
+    @apply text-gray-900 dark:text-white-500;
   }
 
   /* Custom scrollbar */
@@ -58,7 +58,7 @@ html {
 
 /* Selection styling */
 ::selection {
-  @apply bg-blue-500 text-white;
+  @apply bg-blue-500 text-white-500;
 }
 
 /* Animations */

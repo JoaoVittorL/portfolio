@@ -33,7 +33,7 @@ export function HomePage() {
     }
   };
   return (
-    <div className="font-sans text-gray-900 dark:text-white bg-white dark:bg-gray-900 min-h-screen">
+    <div className="font-sans text-gray-900 dark:text-white-500 bg-white-500 dark:bg-gray-900 min-h-screen">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
       <main>
          <Hero/>

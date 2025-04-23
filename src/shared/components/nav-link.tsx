@@ -5,6 +5,7 @@ interface NavLinksProps {
 
 const NavLinks: React.FC<NavLinksProps> = ({ mobile, onClose }) => {
   const links = [
+    { href: "#hero", label: "Início" },
     { href: "#about", label: "Sobre" },
     { href: "#skills", label: "Habilidades" },
     { href: "#projects", label: "Projetos" },
@@ -24,8 +25,8 @@ const NavLinks: React.FC<NavLinksProps> = ({ mobile, onClose }) => {
           onClick={handleClick}
           className={`transition-all duration-300 relative group ${
             mobile 
-              ? 'block py-3 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400' 
-              : 'text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400'
+              ? 'block py-3 text-gray-800 dark:text-white-500 hover:text-blue-600 dark:hover:text-blue-400' 
+              : 'text-gray-800 dark:text-white-500 hover:text-blue-600 dark:hover:text-blue-400'
           }`}
         >
           {link.label}

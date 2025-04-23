@@ -19,10 +19,10 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-commerce Dashboard",
-      description: "A comprehensive dashboard for e-commerce platforms with analytics, inventory management, and order processing features.",
+      title: "Em breve",
+      description: "Organizando projetos para exibir...",
       image: "https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
+      tags: ["React", "TypeScript", "Tailwind CSS"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com"
     },

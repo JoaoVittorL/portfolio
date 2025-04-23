@@ -28,10 +28,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <a href="#hero" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
-          João Vittor
-        </a>
+      <div className="container mx-auto px-4 md:px-6 flex justify-center items-center">
 
         <nav className="hidden md:flex items-center space-x-8">
           <NavLinks />

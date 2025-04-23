@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-10 leading-relaxed">
-            Desenvolvedor Fullstack, com tendência em desenvolvimento Web e Mobile.
+            Analista de dados | Desenvolvedor Frontend 
           </p>
           
           <div className="flex justify-center gap-4 mb-12">
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
           
           <a
             href="#about"
-            className="mx-auto inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-300 animate-bounce"
+            className="mx-auto inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white-500 dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-all duration-300 animate-bounce"
             aria-label="Scroll down"
           >
             <ArrowDown size={24} />

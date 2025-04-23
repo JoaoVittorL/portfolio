@@ -8,6 +8,19 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
+        white: {
+          '50': '#FFFFFF',
+          '100': '#FFFFFF',
+          '200': '#FFFFFF',
+          '300': '#FFFFFF',
+          '400': '#FFFFFF',
+          '500': '#FFFFFF',
+          '600': '#CCCCCC',
+          '700': '#999999',
+          '800': '#666666',
+          '900': '#333333',
+          '950': '#1A1A1A'
+        },
         blue: {
           50: '#eff6ff',
           100: '#dbeafe',

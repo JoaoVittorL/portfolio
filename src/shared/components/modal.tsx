@@ -67,7 +67,7 @@ export function Modal({ isOpen, onClose, title, children, footerContent, showClo
             {footerContent || (
               <button
                 onClick={onClose}
-                className="text-white w-full rounded-lg bg-indigo-600 px-4 py-2 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="text-white-500 w-full rounded-lg bg-indigo-600 px-4 py-2 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 Close Modal
               </button>

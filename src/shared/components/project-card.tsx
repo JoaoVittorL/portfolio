@@ -7,7 +7,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+    <div className="bg-white-500 dark:bg-gray-800 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
       <div className="relative aspect-video overflow-hidden">
         <img 
           src={project.image} 
@@ -21,10 +21,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors duration-300"
+                className="p-2 bg-white-500/20 backdrop-blur-sm rounded-full hover:bg-white-500/30 transition-colors duration-300"
                 aria-label="View source code on GitHub"
               >
-                <Github size={20} className="text-white" />
+                <Github size={20} className="text-white-500" />
               </a>
             )}
             {project.liveUrl && (
@@ -32,10 +32,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-white/20 backdrop-blur-sm rounded-full hover:bg-white/30 transition-colors duration-300"
+                className="p-2 bg-white-500/20 backdrop-blur-sm rounded-full hover:bg-white-500/30 transition-colors duration-300"
                 aria-label="View live project"
               >
-                <ExternalLink size={20} className="text-white" />
+                <ExternalLink size={20} className="text-white-500" />
               </a>
             )}
           </div>
