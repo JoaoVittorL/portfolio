@@ -39,7 +39,7 @@ export function HomePage() {
          <Hero/>
          <About/>
          <Skills />
-         <Projects />
+         {/* <Projects /> */}
          <Contact/>
       </main>
       <Footer/>

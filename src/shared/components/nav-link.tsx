@@ -8,7 +8,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ mobile, onClose }) => {
     { href: "#hero", label: "Início" },
     { href: "#about", label: "Sobre" },
     { href: "#skills", label: "Habilidades" },
-    { href: "#projects", label: "Projetos" },
+    // { href: "#projects", label: "Projetos" },
     { href: "#contact", label: "Contato" }
   ];
 
