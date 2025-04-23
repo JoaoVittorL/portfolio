@@ -5,27 +5,46 @@ import React, { useEffect, useRef } from 'react';
 interface Skill {
   name: string;
   level: number;
-  category: 'frontend' | 'tools' | 'other';
+  category: 'frontend' | 'tools' | 'other' | 'backend';
 }
 
 const Skills: React.FC = () => {
   const skills: Skill[] = [
     { name: 'Tailwind CSS', level: 100, category: 'frontend' },
     { name: 'Responsive Design', level: 100, category: 'frontend' },
-    { name: 'HTML5', level: 90, category: 'frontend' },
-    { name: 'CSS3/SASS', level: 90, category: 'frontend' },
-    { name: 'JavaScript', level: 90, category: 'frontend' },
-    { name: 'TypeScript', level: 90, category: 'frontend' },
-    { name: 'React', level: 90, category: 'frontend' },
-    { name: 'Git', level: 90, category: 'tools' },
-    { name: 'Vite', level: 85, category: 'tools' },
+    { name: 'HTML5', level: 100, category: 'frontend' },
+    { name: 'CSS3/SASS', level: 100, category: 'frontend' },
+    { name: 'JavaScript', level: 100, category: 'frontend' },
+    { name: 'TypeScript', level: 100, category: 'frontend' },
+    { name: 'Restful API', level: 100, category: 'frontend' },
+    { name: 'Next', level: 80, category: 'frontend' },
+    { name: 'React', level: 80, category: 'frontend' },
+    { name: 'Redux/Context API', level: 70, category: 'frontend' },
+    { name: 'Zod', level: 80, category: 'frontend' },
+    { name: 'react-hook-form', level: 90, category: 'frontend' },
+    { name: 'Framer Motion', level: 70, category: 'frontend' },
+    
+    { name: 'Git', level: 80, category: 'tools' },
     { name: 'Figma', level: 60, category: 'tools' },
     { name: 'Jest', level: 60, category: 'tools' },
+    { name: 'Testing Library', level: 70, category: 'tools' },
+    { name: 'Insomnia', level: 90, category: 'tools' },
+    { name: 'Postman', level: 85, category: 'tools' },
+    { name: 'ESLint & Prettier', level: 90, category: 'tools' },
+  
     { name: 'UI/UX Design', level: 60, category: 'other' },
+    { name: 'Agile/Scrum', level: 70, category: 'other' },
+  
+    { name: 'SQL', level: 80, category: 'backend' },
+    { name: 'Node', level: 80, category: 'backend' },
+    { name: 'Express', level: 75, category: 'backend' },
+    { name: 'Prisma ORM', level: 70, category: 'backend' },
+    { name: 'MongoDB', level: 65, category: 'backend' },
   ];
+  
 
   const skillsRef = useRef<HTMLDivElement>(null);
-  const [category, setCategory] = React.useState<'all' | 'frontend' | 'tools' | 'other'>('all');
+  const [category, setCategory] = React.useState<'all' | 'frontend' | 'tools' | 'other' | 'backend'>('all');
 
   const filteredSkills = skills.filter(skill => 
     category === 'all' || skill.category === category
@@ -90,6 +109,12 @@ const Skills: React.FC = () => {
               onClick={() => setCategory('tools')}
             >
               Ferramentas
+            </CategoryButton>
+            <CategoryButton 
+              active={category === 'backend'} 
+              onClick={() => setCategory('backend')}
+            >
+              Backend
             </CategoryButton>
             <CategoryButton 
               active={category === 'other'} 

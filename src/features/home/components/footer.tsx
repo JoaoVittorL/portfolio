@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               <ArrowUp size={20} />
             </button>
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} João Vittor. All rights reserved.
+              &copy; {new Date().getFullYear()} João Vittor. Todos os direitos reservados.
             </p>
           </div>
         </div>

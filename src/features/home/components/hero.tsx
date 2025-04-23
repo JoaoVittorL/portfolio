@@ -1,5 +1,5 @@
 import SocialButton from "@/shared/components/social-button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const Hero: React.FC = () => {
@@ -43,7 +43,6 @@ const Hero: React.FC = () => {
       >
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="block">Olá, sou o</span>
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
               João Vittor
             </span>
@@ -60,7 +59,6 @@ const Hero: React.FC = () => {
               icon={<Linkedin size={20} />} 
               label="LinkedIn" 
             />
-            <SocialButton href="mailto:vittorsantos234@gmail.com" icon={<Mail size={20} />} label="Email" />
           </div>
           
           <a
